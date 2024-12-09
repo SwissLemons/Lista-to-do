@@ -1,0 +1,57 @@
+body {
+    background-color: lightskyblue;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.header {
+    text-align: center;
+}
+
+.task-item {
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+.task-text {
+    margin-right: 10px; /* Espaçamento entre o texto e os botões */
+}
+
+.btn {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+}
+
+.task-form {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre o texto, input e botão "Adicionar" */
+}
+
+.btn.remove {
+    color: red;
+}
+
+.btn.complete {
+    color: green;
+}
